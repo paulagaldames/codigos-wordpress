@@ -32,7 +32,7 @@ function custom_login_styles() {
         }
 
         .login h1 a {
-            background-image: url("https://vivohouse.cl/wp-content/uploads/2026/03/logo-vivo-house.png") !important;
+            background-image: url("https://xxxx.cl/wp-content/uploads/2026/03/logo-xxxx.png") !important;
             background-size: contain !important;
             background-repeat: no-repeat !important;
             background-position: center !important;
