@@ -1,0 +1,148 @@
+
+/*codigo para estilizar presupuesto*/
+
+/* ===== LAYOUT 70 / 30 (más estable) ===== */
+.ywraq-form-table-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr; /* mejor que 70/30 */
+    gap: 30px;
+    align-items: start;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .ywraq-form-table-wrapper {
+        grid-template-columns: 1fr;
+    }
+}
+
+table.cart .cart_item .product-name {
+    width: auto !important;
+}
+
+/* ===== TABLA PRODUCTOS ===== */
+.ywraq-form-table-wrapper table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 12px;
+}
+
+.ywraq-form-table-wrapper table tr {
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    border-radius: 6px;
+}
+
+.ywraq-form-table-wrapper table td {
+    padding: 10px 12px;
+    vertical-align: middle;
+}
+
+table.cart thead th {
+    vertical-align: middle;
+}
+
+table.cart thead th {
+    vertical-align: center; /* alinea todos abajo */
+    padding-bottom: 15px;
+}
+
+table.cart thead th.product-name {
+    text-align: left;
+}
+
+table.cart thead th:not(.product-name) {
+    text-align: center;
+}
+
+/* Imagen producto */
+.ywraq-form-table-wrapper table img {
+    width: 50px !important;
+    height: auto;
+    object-fit: contain;
+    border-radius: 6px;
+}
+
+/* Columna imagen más compacta */
+.ywraq-form-table-wrapper table td:first-child {
+    width: 70px;
+}
+
+/* ===== FORMULARIO ===== */
+.yith-ywraq-mail-form-wrapper {
+    background: #fff;
+    padding: 20px; /* más compacto por el 30% */
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+/* TÍTULO */
+.yith-ywraq-mail-form-wrapper h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/* CAMPOS */
+.yith-ywraq-mail-form-wrapper .form-row {
+    margin-bottom: 12px;
+}
+
+.yith-ywraq-mail-form-wrapper .form-row input,
+.yith-ywraq-mail-form-wrapper .form-row textarea {
+    width: 100%;
+    padding: 10px; /* más compacto */
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-top: 5px;
+    font-size: 14px;
+    transition: all 0.2s ease;
+}
+
+/* FOCUS */
+.yith-ywraq-mail-form-wrapper input:focus,
+.yith-ywraq-mail-form-wrapper textarea:focus {
+    border-color: #ff5a1f;
+    box-shadow: 0 0 0 2px rgba(255,90,31,0.1);
+    outline: none;
+}
+
+/* LABELS */
+.yith-ywraq-mail-form-wrapper label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* BOTÓN ENVIAR */
+.yith-ywraq-mail-form-wrapper button,
+.yith-ywraq-mail-form-wrapper input[type="submit"] {
+    width: 100%;
+    background: #ff5a1f;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.yith-ywraq-mail-form-wrapper button:hover {
+    background: #e14b15;
+}
+
+/* ===== BOTONES SECUNDARIOS ===== */
+.yith-ywraq-before-table .button,
+.ywraq-form-table-wrapper .button {
+    background: #222;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+/* ===== INPUT CANTIDAD ===== */
+.ywraq-form-table-wrapper input.qty {
+    width: 50px;
+    text-align: center;
+}
